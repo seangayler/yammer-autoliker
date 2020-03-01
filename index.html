@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Yammer-Autolike</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="container__main-header">Yammer Autoliker</h1>
+
+    <h2>How this works</h2>
+    <p>This tool automatically likes posts on a Yammer page. It works by saving a program to your bookmarks bar that runs when you click on that bookmark. For browser security reasons, you need to add the bookmark manually. <strong>It is assumed that your internet connection is sufficiently fast.</strong></p>
+    
+    <h2>Different programs</h2>
+    <p>There are two programs available:</p>
+    <ul>
+      <li><strong>Program 1: </strong>One that likes every post in the page's history.</li>
+      <li><strong>Program 2: </strong>One that likes every currently loaded post on the page.</li>
+    </ul>
+    
+    <h2>User guide</h2>
+    <p>You may need to first display your bookmarks bar in your browser if it is currently hidden. You need to copy the text representing each program into the URL section of the bookmark.</p>
+    <ol>
+      <li>Add a new bookmark in your browser of choice</li>
+      <li>Copy the program text below from the "Get the programs" section</li>
+      <li>Paste the program text into the URL section of the new bookmark</li>
+      <li>Click the bookmark while on a Yammer page to execute the program</li>
+    </ol>
+    
+    <h2>Get the programs</h2>
+    <div class="container__bookmark-container">
+      <div class="container__bookmark-container__bookmark-content">
+        <h3>Program 1</h3>
+        <p>Likes every post in page's history. <strong>(NOT FINISHED)</strong></p>
+        <button id="program-1-button-copy" class="container__bookmark-container__bookmark-content__button-copy">CLICK ME TO COPY PROGRAM TEXT</button>
+        <button id="program-1-button-show" class="container__bookmark-container__bookmark-content__button-show">Just show me the program text.</button>
+        <textarea id="program-1-text" readonly class="program-text hidden"></textarea>
+      </div>
+      <div class="container__bookmark-container__bookmark-content">
+        <h3>Program 2</h3>
+        <p>Likes every currently loaded post on the page. <strong>(Takes 3 seconds to run).</strong></p>
+        <button id="program-2-button-copy" class="container__bookmark-container__bookmark-content__button-copy">CLICK ME TO COPY PROGRAM TEXT</button>
+        <button id="program-2-button-show" class="container__bookmark-container__bookmark-content__button-show">Just show me the program text</button>
+        <textarea id="program-2-text" readonly class="program-text hidden"></textarea>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
